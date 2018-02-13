@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+*{
+  outline: none !important;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  text-transform: uppercase;
+}
+
+.contentWidth{
+  width: 60%;
+  margin: auto;
+}
+
+.raleWay{
+  font-family: 'Raleway', sans-serif;
+}
+
+.osWald{
+  font-family: 'Oswald', sans-serif;
+}
+
+.kalam{
+  font-family: 'Kalam', cursive;
+}
+
+.comfortaa{
+  font-family: 'Comfortaa', cursive;
+}
+
+.backgroundWinter{
+  background: linear-gradient(to bottom, #e6dada, #274046);
+}
+
+.colorWhite{
+  color:white;
+}
+
+.gradienBorder{
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #fcf503, #ff0b6d);
+  border-image-slice: 1;
+}
+
+.displayFlexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  background: rgba(64, 64, 64,.8);
+}
+
+main{
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dropdownConent{
+  background: rgba(64, 64, 64,.8);
+  border-style: none;
+}
+
+#dropdownConent a{
+  color: white;
+}
+
+#dropdownConent a:hover{
+  background: rgba(22, 34, 42,.8);
+}
+
+/* INTRO */
+.intro{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(..\\src\\images\\background.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.intro .inner{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introContent{
+}
+
+.introContent div{
+  max-width: 400px;
+  min-width: 280px;
+  background: rgba(22, 34, 42,.8);
+  border: 4px solid #3a6073;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introContent div h1{
+  color: transparent;
+  margin: 0;
+  text-shadow: 0 0 1px rgba(255, 255, 255,.8);
+}
+
+.introContent a{
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  background: linear-gradient(to bottom, #232526, #414345);
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+/* Top content */
+#content1{
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  background: #252525;
+  padding: 0;
+  margin: 0;
+}
+
+/* Quotebox */
+#quoteBox{
+  height: 100%;
+  width: 100%;
+  font-size: 22px;
+  background: transparent;
+  color: white;
+}
+
+#quoteContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+#quoteAuthor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#newQuote{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#getNewQuote{
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: #808080;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+  box-shadow: 0px 3px 8px rgba(0,0,0,.5), inset 0px 2px 3px #fff;
+  transition: all .1s linear;
+}
+
+#getNewQuote:hover{
+  color:#6cb92d;
+  text-shadow:0px 0px 6px #6cb92d;
+}
+
+#getNewQuote:after{
+  color:#e9e6e4;
+	content: "";
+	display: block;
+	font-size: 30px;
+	height: 30px;
+	text-decoration: none;
+	text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+	position: absolute;
+	width: 30px;
+}
+
+#getNewQuote:active{
+  background: linear-gradient(top, #efedec, #f7f4f4);
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+}
+
+/* CAROUSEL */
+.carouselItem{
+  width: 100%;
+  height: 500px;
+  margin: auto;
+}
+
+.carouselSlide1{
+  background: url(..\\src\\images\\carouselSlide1.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carouselSlide2{
+  background: url(..\\src\\images\\carouselSlide2.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carouselSlide3{
+  background: url(..\\src\\images\\carouselSlide3.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carousel-caption{
+  top: 10%;
+  text-transform: uppercase;
+}
+
+/* Bottom content */
+.botContent{
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  background: radial-gradient(#434343, #000000);
+  box-shadow: 0 5px 10px rgba(0,0,0,1), inset 0 -4px 15px 0 rgba(255,255,255,.5);
+  overflow: hidden;
+}
+
+#content2{
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #ff512f, #f09819);
+  padding: 30px 0;
+  margin: 0;
+}
+
+#content2 div{
+
+}
+
+#weatherInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.side1, .side2{
+  width: 280px;
+  height: 400px;
+  background: #005c97;
+  padding: 20px;
+  color: white;
+}
+
+.location{
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.current{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weatherIcon{
+  font-size: 3em;
+}
+
+#temperature{
+  font-size: 2em;
+}
+
+.nextDays{
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.nextDays div{
+  padding: 0;
+}
+
+@media (max-width: 450px) {
+  .nextDays{
+    display: none;
+  }
+  .current{
+    height: 90%;
+  }
+
+  .side1{
+    height: 300px;
+    width: 200px;
+  }
+
+  .side2{
+    display: none;
+  }
+
+  .weatInfCtrl{
+    display: none;
+  }
+}
+
+.borderBot{
+  border-bottom: 2px solid white;
+}
+
+.weatInfCtrl{
+  font-size: 3em;
+  transition: .5s;
+}
+
+.weatInfCtrl:hover{
+  color: white;
+  font-size: 3.5em;
+  transition: .5s;
+}
+
+
+.side1{
+  position: absolute;
+  transform-origin: right;
+  transition: .5s;
+  transform: translateX(0) rotateY(0deg);
+}
+
+.side1.active{
+  transform: translateX(-100%) rotateY(-90deg);
+}
+
+.side2{
+  position: absolute;
+  transform-origin: left;
+  transition: .5s;
+  transform: translateX(100%) rotateY(90deg);
+  z-index: -1;
+}
+
+.side2.active{
+  transform: translateX(0) rotateY(0deg);
+  z-index: 1;
+}
+
+.moreInfo{
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.flexBot{
+  display: flex;
+  align-items: flex-end;
+}
+
+footer{
+  height: 30vh;
+  background: #363795;
+  color: white;
+}
+
+.footer{
+  height: 100%;
+  width: 100%;
+}
+
+.footer div:nth-child(1){
+  height: 30%;
+}
+.footer div:nth-child(2){
+  height: 40%;
+  font-size: 3em;
+}
+.footer div:nth-child(2) i{
+}
+.footer div:nth-child(3){
+  height: 30%;
+}

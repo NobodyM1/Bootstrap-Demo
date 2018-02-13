@@ -1,0 +1,279 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Bootstrap demo</title>
+  <meta name="description" content="Bootstrap demo">
+  <meta name="author" content="Bit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <a href="#" class="navbar-brand"><i class="fas fa-bold"></i><i class="fab fa-dyalog"></i></a> <!-- Boostrap demo logo -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapse_target">
+      <ul class="navbar-nav" id="navbarContent">
+        <li class="nav-item active">
+          <a href="#home" class="nav-link smoothScroll">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#content1" class="nav-link smoothScroll">Quote</a>
+        </li>
+        <li class="nav-item">
+          <a href="#myCarousel" class="nav-link smoothScroll">Carousel</a>
+        </li>
+        <li class="nav-item">
+          <a href="#content2" class="nav-link smoothScroll">Other</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdownConent">
+            Dropdown
+            <span class="caret"></span>
+          </a>
+          <div class="dropdown-menu" id="dropdownConent" aria-labelledby="dropdownContent" style="margin-top: 7px;">
+            <a href="#" class="dropdown-item">item 1</a>
+            <a href="#" class="dropdown-item">item 2</a>
+            <a href="#" class="dropdown-item">item 3</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+  <!-- Intro view -->
+  <section class="intro" id="home">
+    <div class="inner">
+      <div class="introContent col-12 column" align="center">
+        <div class="">
+          <h1 class="raleWay ">Bootstrap demo</h1>
+        </div>
+        <a href="#content1" class="btn osWald smoothScroll" id="getStarted">Get started</a>
+      </div>
+    </div>
+  </section>
+  <!-- Intro view end -->
+  <!-- Text box -->
+  <div class="column">
+    <div class="col-12 row" id="content1">
+      <!-- Quotebox -->
+      <div id="quoteBox" class="row col-sm-10 kalam jumbotron">
+        <div id="quoteContent" class="col-md-12"></div>
+        <div id="quoteAuthor" class="col-md-5"></div>
+        <div id="newQuote" class="col-md-5 offset-md-2 my-3">
+          <a id="getNewQuote" class="text-center raleWay"><i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Text box end -->
+  <!-- Carousel -->
+  <div class="carousel slide" id="myCarousel" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active carouselItem carouselSlide1 text-center">
+        <div class="carousel-caption">
+          <h2>Made with</h2>
+          <img src=".\src\images\html5Logo.png" width="200" height="200">
+        </div>
+      </div>
+      <div class="carousel-item carouselItem carouselSlide2">
+        <div class="carousel-caption">
+          <h2>Made with</h2>
+          <img src=".\src\images\css3Logo.png" width="200" height="200">
+        </div>
+      </div>
+      <div class="carousel-item carouselItem carouselSlide3">
+        <div class="carousel-caption">
+          <h2>Made with</h2>
+          <img src=".\src\images\bootstrapLogo.png" width="200" height="200">
+        </div>
+      </div>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Carousel end -->
+  <!-- Bottom content -->
+  <div class="col-12 row text-right" id="content2">
+    <div class="weatInfCtrl col-2" id="weatInfLeft">
+      <h4>back</h4>
+      <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="col-8 text-center" id="weatherInfo">
+      <div class="side1 comfortaa">
+        <div class="location">Oulu</div>
+        <div class="current">
+          <div class="text-center">
+            <div id="weatherIcon"><i class="fas fa-cloud"></i><i class="fas fa-snowflake"></i></div>
+            <div id="temperature" class="my-2">-3.4&#8451;</div>
+            <div id="day">Today</div>
+          </div>
+        </div>
+        <div class="nextDays col-12 row">
+          <div class="row col-12 borderBot">
+            <div class="col-6 text-left">
+              Wensday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="row col-12 borderBot">
+            <div class="col-6 text-left">
+              Thursday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="row col-12 borderBot">
+            <div class="col-6 text-left">
+              Friday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side2 comfortaa">
+        <div class="location">Oulu</div>
+        <div class="moreInfo col-12 row">
+          <div class="row col-12 borderBot flexBot">
+            <div class="col-6 text-left">
+              Monday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="row col-12 borderBot flexBot">
+            <div class="col-6 text-left">
+              Today
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="row col-12 borderBot flexBot">
+            <div class="col-6 text-left">
+              Wensday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="row col-12 borderBot flexBot">
+            <div class="col-6 text-left">
+              Thursday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="row col-12 borderBot flexBot">
+            <div class="col-6 text-left">
+              Friday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="row col-12 borderBot flexBot">
+            <div class="col-6 text-left">
+              Saturday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+          <div class="row col-12 borderBot flexBot">
+            <div class="col-6 text-left">
+              Sunday
+            </div>
+            <div class="col-3 text-center">
+              9&#8451;
+            </div>
+            <div class="col-3 text-right">
+              <i class="fas fa-cloud"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weatInfCtrl text-left col-2" id="weatInfRight">
+      <h4>Next</h4>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+  <!-- Bottom content end -->
+  <footer>
+    <div class="footer">
+      <div class="displayFlexCenter">
+        <h3>Around the web</h3>
+      </div>
+      <div class="displayFlexCenter">
+        <i class="fab fa-facebook-square mx-3"></i>
+        <i class="fab fa-twitter-square mx-3"></i>
+        <i class="fab fa-twitch mx-3"></i>
+        <i class="fab fa-youtube-square mx-3"></i>
+      </div>
+      <div class="displayFlexCenter text-center">
+        "What one programmer can do in one month, two programmers can do in two months." - Fred Brooks
+      </div>
+    </div>
+  </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+<!-- -->
