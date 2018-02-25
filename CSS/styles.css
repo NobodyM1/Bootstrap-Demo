@@ -16,9 +16,8 @@ html, body{
   text-transform: uppercase;
 }
 
-.contentWidth{
-  width: 60%;
-  margin: auto;
+.noPadding{
+  padding: 0;
 }
 
 .raleWay{
@@ -84,7 +83,6 @@ main{
 /* INTRO */
 .intro{
   height: 100%;
-  width: 100%;
   margin: auto;
   background: url(..\\src\\images\\background.jpeg) no-repeat 50% 50%;
   background-size: cover;
@@ -132,7 +130,6 @@ main{
 
 /* Top content */
 #content1{
-  width: 100%;
   min-height: 60vh;
   display: flex;
   justify-content: center;
@@ -212,7 +209,6 @@ main{
 
 /* CAROUSEL */
 .carouselItem{
-  width: 100%;
   height: 500px;
   margin: auto;
 }
@@ -255,7 +251,6 @@ main{
 }
 
 #content2{
-  width: 100%;
   min-height: 620px;
   position: relative;
   display: flex;
@@ -355,9 +350,9 @@ main{
   transition: .5s;
 }
 
-.weatInfCtrl:hover{
+.weatInfCtrl:hover > .iconHover{
   color: white;
-  font-size: 3.5em;
+  font-size: 1.2em;
   transition: .5s;
 }
 
@@ -409,7 +404,6 @@ footer{
 
 .footer{
   height: 100%;
-  width: 100%;
 }
 
 .footer div:nth-child(1){
